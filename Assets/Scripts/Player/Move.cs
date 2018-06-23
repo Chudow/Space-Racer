@@ -28,14 +28,13 @@ public class Move : MonoBehaviour {
 
         if (Input.GetAxis("Vertical") > 0 && transform.InverseTransformDirection(rb.velocity).y <= maxSpeed)
         {
-            
             rb.AddRelativeForce(Vector3.up * accelSpeed, ForceMode.Acceleration);
         }
 
-        if (Input.GetAxis("Horizontal") != 0)
-        {
+        //if (Input.GetAxis("Strafe") != 0)
+        //{
             rb.AddRelativeForce(Vector3.left * strafeSpeed * Input.GetAxis("Horizontal"));
-        }
+        //}
 
         if (Input.GetAxis("Mouse X") != 0 && rotDiff < maxTurn)
         {
@@ -48,19 +47,6 @@ public class Move : MonoBehaviour {
         {
             transform.rotation = Quaternion.Lerp(transform.rotation, defaultHeading, turnBackSpeed * Time.deltaTime);
         }
-        //else if (Input.GetAxis("Mouse X") < 0)
-        //{
-            
-        //        float turn = Input.GetAxis("Mouse X") * turnSpeed;
-        //        rb.AddRelativeTorque(0, 0, turn);
-            
-        //}
-        
-        //else
-        //{
-        //    Vector3 rot = new Vector3(transform.rotation.x, transform.rotation.y, transform.rotation.z);
-        //    transform.Rotate(Vector3.RotateTowards(rot, defaultHeading, turnMaxRadiansDelta, turnMaxMagnitudeDelta));
-        //}
-        
+       
     }
 }

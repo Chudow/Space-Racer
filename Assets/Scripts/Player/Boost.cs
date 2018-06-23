@@ -15,7 +15,7 @@ public class Boost : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetButtonDown("Fire1"))
+		if (Input.GetButtonDown("Boost"))
         {
             if (boosts > 0)
             {

@@ -11,9 +11,8 @@ public class WallCrash : MonoBehaviour {
         if (collision.relativeVelocity.magnitude > crashSensitivity && collision.gameObject.tag == "Wall")
         {
             Destroy(gameObject);
-            Debug.Log("Crash");
+            Debug.Log("CRASH!");
         }
-        
     }
 
 

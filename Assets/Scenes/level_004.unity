@@ -89,7 +89,7 @@ LightmapSettings:
     m_PVRFilteringAtrousPositionSigmaIndirect: 2
     m_PVRFilteringAtrousPositionSigmaAO: 1
     m_ShowResolutionOverlay: 1
-  m_LightingDataAsset: {fileID: 112000002, guid: c59f5b3afb6f2d2409870737de37840d,
+  m_LightingDataAsset: {fileID: 112000002, guid: 1e3de9f181af90b44a694f997f9ad14b,
     type: 2}
   m_UseShadowmask: 1
 --- !u!196 &4
@@ -1936,15 +1936,6 @@ Prefab:
     - target: {fileID: 4262306476657178, guid: bb8a2c6c9522bdf439e9dc04d3b65e44, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 4262306476657178, guid: bb8a2c6c9522bdf439e9dc04d3b65e44, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114976635390905076, guid: bb8a2c6c9522bdf439e9dc04d3b65e44,
-        type: 2}
-      propertyPath: scene
-      value: menu
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: bb8a2c6c9522bdf439e9dc04d3b65e44, type: 2}
