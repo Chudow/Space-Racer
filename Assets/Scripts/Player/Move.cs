@@ -11,7 +11,7 @@ public class Move : MonoBehaviour {
     public float maxTurn = 20; //Hur starkt man kan svänga max, Quaternion.Angle så inte riktigt i grader
     [Range(0, 1)]
     public float turnBackSpeed = 0.3f; //Hur hårt man svänger tillbaka till default vinkel
-
+   
     Quaternion defaultHeading;
 
     Rigidbody rb;
@@ -31,22 +31,18 @@ public class Move : MonoBehaviour {
             rb.AddRelativeForce(Vector3.up * accelSpeed, ForceMode.Acceleration);
         }
 
-        //if (Input.GetAxis("Strafe") != 0)
-        //{
-            rb.AddRelativeForce(Vector3.left * strafeSpeed * Input.GetAxis("Horizontal"));
-        //}
+        rb.AddRelativeForce(Vector3.left * strafeSpeed * Input.GetAxis("Horizontal"));
 
         if (Input.GetAxis("Mouse X") != 0 && rotDiff < maxTurn)
         {
             
-                float turn = Input.GetAxis("Mouse X") * turnSpeed;
-                rb.AddRelativeTorque(0, 0, turn);
+            float turn = Input.GetAxis("Mouse X") * turnSpeed;
+            rb.AddRelativeTorque(0, 0, turn);
             
         }
         else
         {
             transform.rotation = Quaternion.Lerp(transform.rotation, defaultHeading, turnBackSpeed * Time.deltaTime);
         }
-       
     }
 }
