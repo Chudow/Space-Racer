@@ -13,20 +13,23 @@ public class Speedometer : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        speed = FindObjectOfType<Text>();
-        rb = GetComponent<Rigidbody>();
+        speed = GetComponent<Text>();
+        rb = GameObject.FindGameObjectWithTag("Player").GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        spd = (int) Mathf.Round(transform.InverseTransformDirection(rb.velocity).y * 10);
-        color = Mathf.Pow(transform.InverseTransformDirection(rb.velocity).y, 0.15f) - 1;
-
-        if (speed != null)
+        if (rb != null)
         {
-            speed.color = new Color(color, 0, 0);
-            speed.text = "Speed: " + spd;
+            spd = (int)Mathf.Round(-rb.velocity.z * 10); //transform.InverseTransformDirection(rb.velocity).y
+            color = Mathf.Pow(-rb.velocity.z, 0.15f) - 1;
+
+            if (speed != null)
+            {
+                speed.color = new Color(color, 0, 0);
+                speed.text = "Speed: " + spd;
+            }
+            else Debug.Log("speed = null?!");
         }
-        else Debug.Log("speed = null?!");
     }
 }

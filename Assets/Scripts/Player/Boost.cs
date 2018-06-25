@@ -7,10 +7,12 @@ public class Boost : MonoBehaviour {
     public float boostPower = 3.5f;
     int boosts = 0;
     Rigidbody rb;
+    BoostGauge bg;
 
 	// Use this for initialization
 	void Start () {
         rb = GetComponent<Rigidbody>();
+        bg = GameObject.FindGameObjectWithTag("BoostGauge").GetComponent<BoostGauge>();
 	}
 	
 	// Update is called once per frame
@@ -20,6 +22,7 @@ public class Boost : MonoBehaviour {
             if (boosts > 0)
             {
                 boosts--;
+                bg.SetBoosts(boosts);
                 rb.AddRelativeForce(Vector3.up * boostPower, ForceMode.Impulse);
             }
         }
@@ -28,6 +31,9 @@ public class Boost : MonoBehaviour {
     void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Boost")
+        {
             boosts++;
+            bg.SetBoosts(boosts);
+        }
     }
 }

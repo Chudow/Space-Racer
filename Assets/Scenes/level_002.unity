@@ -209,7 +209,7 @@ Prefab:
     - target: {fileID: 224481040427969012, guid: 3ca91f80da4378444a6ca5219172af75,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 224481040427969012, guid: 3ca91f80da4378444a6ca5219172af75,
         type: 2}
@@ -249,7 +249,7 @@ Prefab:
     - target: {fileID: 224481040427969012, guid: 3ca91f80da4378444a6ca5219172af75,
         type: 2}
       propertyPath: m_RootOrder
-      value: 3
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 224481040427969012, guid: 3ca91f80da4378444a6ca5219172af75,
         type: 2}
@@ -300,6 +300,16 @@ Prefab:
         type: 2}
       propertyPath: m_Pivot.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114801318741250542, guid: 3ca91f80da4378444a6ca5219172af75,
+        type: 2}
+      propertyPath: name
+      value: It's always Tuesday somewhere
+      objectReference: {fileID: 0}
+    - target: {fileID: 114801318741250542, guid: 3ca91f80da4378444a6ca5219172af75,
+        type: 2}
+      propertyPath: levelName
+      value: It's always Tuesday somewhere
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ca91f80da4378444a6ca5219172af75, type: 2}

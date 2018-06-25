@@ -1970,6 +1970,16 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114801318741250542, guid: 3ca91f80da4378444a6ca5219172af75,
+        type: 2}
+      propertyPath: name
+      value: Mimsy borogroves
+      objectReference: {fileID: 0}
+    - target: {fileID: 114801318741250542, guid: 3ca91f80da4378444a6ca5219172af75,
+        type: 2}
+      propertyPath: levelName
+      value: Intensity override
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ca91f80da4378444a6ca5219172af75, type: 2}
   m_IsPrefabParent: 0

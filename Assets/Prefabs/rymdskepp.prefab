@@ -43,7 +43,6 @@ GameObject:
   - component: {fileID: 114243276265383146}
   - component: {fileID: 114835648229059298}
   - component: {fileID: 114001672885651848}
-  - component: {fileID: 114690269871354510}
   m_Layer: 0
   m_Name: rymdskepp
   m_TagString: Player
@@ -224,13 +223,31 @@ TrailRenderer:
       m_Curve:
       - serializedVersion: 3
         time: 0
-        value: 0.30833244
+        value: 0.14035034
         inSlope: 0
         outSlope: 0
         tangentMode: 0
         weightedMode: 0
         inWeight: 0.33333334
         outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 0.13032295
+        value: 0.5543148
+        inSlope: 1.6079655
+        outSlope: 1.6079655
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0.33333334
+        outWeight: 0.33333334
+      - serializedVersion: 3
+        time: 1
+        value: 1
+        inSlope: 0
+        outSlope: 0
+        tangentMode: 0
+        weightedMode: 0
+        inWeight: 0
+        outWeight: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
@@ -268,7 +285,7 @@ TrailRenderer:
     alignment: 0
     textureMode: 0
     generateLightingData: 0
-  m_MinVertexDistance: 0.1
+  m_MinVertexDistance: 0.3
   m_Autodestruct: 0
 --- !u!114 &114001672885651848
 MonoBehaviour:
@@ -313,17 +330,6 @@ MonoBehaviour:
   groundProximity: 1.5
   jumpPower: 7
   jumpCD: 60
---- !u!114 &114690269871354510
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1310012070359988}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5e571a65b547ceb429e75a39bf4018b7, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &114835648229059298
 MonoBehaviour:
   m_ObjectHideFlags: 1
