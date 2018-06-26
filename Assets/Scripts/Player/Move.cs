@@ -33,11 +33,12 @@ public class Move : MonoBehaviour {
 
         rb.AddRelativeForce(Vector3.left * strafeSpeed * Input.GetAxis("Horizontal"));
 
-        if (Input.GetAxis("Mouse X") != 0 && rotDiff < maxTurn)
+        if (Input.GetAxis("Mouse X") != 0 /*|| Input.GetAxis("Mouse Y") != 0*/ && rotDiff < maxTurn)
         {
             
             float turn = Input.GetAxis("Mouse X") * turnSpeed;
-            rb.AddRelativeTorque(0, 0, turn);
+            //float pitch = Input.GetAxis("Mouse Y") * turnSpeed;
+            rb.AddRelativeTorque(0, 0, turn); //(pitch, 0, turn);
             
         }
         else

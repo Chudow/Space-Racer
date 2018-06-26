@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class CameraFollow : MonoBehaviour {
 
-    Vector3 posDiff;
+    public Vector3 posDiff = new Vector3(0, -5, -10); //Vart i relation till spelaren kameran ska vara
     GameObject player;
     Transform lookAtMe;
 
@@ -16,8 +16,8 @@ public class CameraFollow : MonoBehaviour {
     void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
         lookAtMe = player.transform.GetChild(0);
-        posDiff = player.transform.position - transform.position;
-	}
+        transform.position = player.transform.position - posDiff;
+    }
 	
 	// Update is called once per frame
 	void Update () {

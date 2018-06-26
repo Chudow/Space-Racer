@@ -28,12 +28,18 @@ public class Boost : MonoBehaviour {
         }
 	}
 
-    void OnTriggerEnter(Collider other)
+    public void IncreaseBoosts(int i)
     {
-        if (other.gameObject.tag == "Boost")
-        {
-            boosts++;
-            bg.SetBoosts(boosts);
-        }
+        boosts += i;
+        bg.SetBoosts(boosts);
     }
+
+    //void OnTriggerEnter(Collider other)
+    //{
+    //    if (other.gameObject.tag == "Boost")
+    //    {
+    //        boosts++;
+    //        bg.SetBoosts(boosts);
+    //    }
+    //}
 }

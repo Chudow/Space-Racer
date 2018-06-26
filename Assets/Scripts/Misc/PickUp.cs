@@ -16,8 +16,13 @@ public class PickUp : MonoBehaviour {
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.tag == "Player")
+        if (other.gameObject.tag == "Player" && other.GetType().Name == "MeshCollider")
         {
+            if (tag == "Boost")
+            {
+                other.gameObject.GetComponent<Boost>().IncreaseBoosts(1);
+            }
+
             Destroy(gameObject);
         }
     }

@@ -43,6 +43,10 @@ GameObject:
   - component: {fileID: 114243276265383146}
   - component: {fileID: 114835648229059298}
   - component: {fileID: 114001672885651848}
+  - component: {fileID: 65486708784491744}
+  - component: {fileID: 65496875999834724}
+  - component: {fileID: 65288816583668044}
+  - component: {fileID: 65939235801599212}
   m_Layer: 0
   m_Name: rymdskepp
   m_TagString: Player
@@ -157,7 +161,7 @@ Rigidbody:
   m_GameObject: {fileID: 1310012070359988}
   serializedVersion: 2
   m_Mass: 1
-  m_Drag: 0.025
+  m_Drag: 0.03
   m_AngularDrag: 10
   m_UseGravity: 1
   m_IsKinematic: 0
@@ -178,6 +182,54 @@ MeshCollider:
   m_CookingOptions: 14
   m_SkinWidth: 0.01
   m_Mesh: {fileID: 4300000, guid: fdee6501e70050a468e45bf637214c77, type: 3}
+--- !u!65 &65288816583668044
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1310012070359988}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.34879398, y: 0.76789504, z: 0.108880356}
+  m_Center: {x: 0.38, y: 0.24, z: 0.01833437}
+--- !u!65 &65486708784491744
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1310012070359988}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.72773933, y: 0.6136769, z: 0.108880356}
+  m_Center: {x: 0.014592171, y: 0.5554223, z: 0.01833437}
+--- !u!65 &65496875999834724
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1310012070359988}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.39939374, y: 0.76789504, z: 0.108880356}
+  m_Center: {x: -0.3252999, y: 0.24000001, z: 0.01833437}
+--- !u!65 &65939235801599212
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1310012070359988}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.34879398, y: 0.76789504, z: 0.108880356}
+  m_Center: {x: 0.027689457, y: 0.6325314, z: 0.01833437}
 --- !u!96 &96434816252339594
 TrailRenderer:
   serializedVersion: 2
