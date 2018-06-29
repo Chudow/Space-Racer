@@ -469,7 +469,7 @@ Prefab:
     - target: {fileID: 114084461837809032, guid: 5099a4ec558eb34479bcc37610c672cb,
         type: 2}
       propertyPath: killField
-      value: -20
+      value: -15
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5099a4ec558eb34479bcc37610c672cb, type: 2}
@@ -2796,7 +2796,7 @@ Prefab:
     - target: {fileID: 114801318741250542, guid: 3ca91f80da4378444a6ca5219172af75,
         type: 2}
       propertyPath: levelName
-      value: Lorem ipsum dolor sit amet
+      value: The spiral of joy and despair
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3ca91f80da4378444a6ca5219172af75, type: 2}

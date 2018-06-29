@@ -7,13 +7,17 @@ public class LevelRestart : MonoBehaviour {
 
     GameObject player;
     Finish finish;
+    FallDownText fallDownText;
 
     public int killField;
+    [HideInInspector]
+    public bool fellDown = false;
 
 	// Use this for initialization
 	void Start () {
         player = GameObject.FindGameObjectWithTag("Player");
         finish = GameObject.FindGameObjectWithTag("Finish").GetComponent<Finish>();
+        fallDownText = FindObjectOfType<FallDownText>();
 	}
 	
 	// Update is called once per frame
@@ -27,6 +31,17 @@ public class LevelRestart : MonoBehaviour {
             }
         }
 
-        if (player != null) if (player.transform.position.y < killField) Destroy(player);
+        if (player != null)
+        {
+            if (player.transform.position.y < killField)
+            {
+                player.GetComponent<Move>().enabled = false;
+                player.GetComponent<Boost>().enabled = false;
+                fellDown = true;
+                player = null;
+                fallDownText.FallDown();
+            }
+
+        }
 	}
 }

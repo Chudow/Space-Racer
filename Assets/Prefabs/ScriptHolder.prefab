@@ -23,7 +23,7 @@ GameObject:
   - component: {fileID: 114321373410644746}
   m_Layer: 0
   m_Name: ScriptHolder
-  m_TagString: Untagged
+  m_TagString: Holder of scripts
   m_Icon: {fileID: -1412012063857583412, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -35,7 +35,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1341131252394690}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 45.59627, y: 35.189796, z: -110.862854}
+  m_LocalPosition: {x: -515.106, y: 376.862, z: 231.90002}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -52,7 +52,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 77fcc5d6303299748ad971e2c54b1336, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  killField: -100
+  killField: -30
+  fellDown: 0
 --- !u!114 &114321373410644746
 MonoBehaviour:
   m_ObjectHideFlags: 1
