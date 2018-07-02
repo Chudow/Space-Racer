@@ -15,7 +15,7 @@ public class FallDownText : MonoBehaviour
 
     public void FallDown()
     {
-        int r = Random.Range(0, 4);
+        int r = Random.Range(0, 5);
 
         switch(r)
         {
@@ -30,6 +30,9 @@ public class FallDownText : MonoBehaviour
                 break;
             case 3:
                 t.text = "You seem to have fallen off";
+                break;
+            case 4:
+                t.text = "Fall flat into the deep ravine";
                 break;
             default:
                 break;
