@@ -27,7 +27,7 @@ public class Speedometer : MonoBehaviour {
             if (speed != null)
             {
                 speed.color = new Color(color, 0, 0);
-                speed.text = "Speed: " + spd;
+                speed.text = "Speed: " + Mathf.Abs(spd);
             }
             else Debug.Log("speed = null?!");
         }

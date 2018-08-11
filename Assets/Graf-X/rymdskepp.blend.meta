@@ -1,11 +1,12 @@
 fileFormatVersion: 2
 guid: fdee6501e70050a468e45bf637214c77
 ModelImporter:
-  serializedVersion: 22
+  serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
     2100000: unnamed
+    2100002: Material
     2300000: //RootNode
     3300000: //RootNode
     4300000: Plane
@@ -62,6 +63,8 @@ ModelImporter:
     secondaryUVHardAngle: 88
     secondaryUVPackMargin: 4
     useFileScale: 1
+    previousCalculatedGlobalScale: 1
+    hasPreviousCalculatedGlobalScale: 1
   tangentSpace:
     normalSmoothAngle: 60
     normalImportMode: 0
