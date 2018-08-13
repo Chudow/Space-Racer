@@ -21,14 +21,14 @@ Shader "Custom/ShipShader"
 			half newAtten;
 			float d = dot(s.Normal, lightDir) * atten;
 
-			if (d > 0.9) newAtten = 0.9;
+			if (d > 0.9) newAtten = 1;
 			else if (d > 0.8) newAtten = 0.8;
-			else if (d > 0.7) newAtten = 0.7;
+			//else if (d > 0.7) newAtten = 0.7;
 			else if (d > 0.6) newAtten = 0.6;
-			else if (d > 0.5) newAtten = 0.5;
-			else if (d > 0.4) newAtten = 0.4;
+			//else if (d > 0.5) newAtten = 0.5;
+			//else if (d > 0.4) newAtten = 0.4;
 			else if (d > 0.3) newAtten = 0.3;
-			else if (d > 0.2) newAtten = 0.2;
+			//else if (d > 0.2) newAtten = 0.2;
 			else if (d > 0.1) newAtten = 0.1;
 			else newAtten = 0;
 
